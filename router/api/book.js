@@ -70,7 +70,7 @@ router.delete('/books_delete/:id', (req, res) => {
             users: books.find(book => book.id !== parseInt(req.params.id))
         })
      } else {
-        res.status (400).json({ msg: ` No user with the id of ${req.params.id} `})
+        res.status (400).json({ msg: ` No user with the id of : ${req.params.id} `})
     }  
 })
 
